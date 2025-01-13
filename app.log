@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fathy Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- AOS Library for Animations -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #020B1C;
+            --secondary-color: #0A1731;
+            --accent-color: #3B82F6;
+            --text-primary: #FFFFFF;
+            --text-secondary: #94A3B8;
+        }
+
+        /* General Styles */
+        body {
+            background-color: var(--primary-color);
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+
+        .text-gradient {
+            background: linear-gradient(45deg, #3B82F6, #9333EA);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: rgba(2, 11, 28, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+        }
+
+        .navbar-brand {
+            color: var(--accent-color) !important;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            min-height: 100vh;
+            position: relative;
+            overflow: hidden;
+            padding: 100px 0;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background:
+                radial-gradient(circle at 20% 30%, rgba(147, 51, 234, 0.15) 0%, transparent 30%),
+                radial-gradient(circle at 80% 70%, rgba(59, 130, 246, 0.15) 0%, transparent 30%);
+        }
+
+        .hero-img-container {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+        }
+
+        .hero-img-container::before,
+        .hero-img-container::after {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            filter: blur(40px);
+        }
+
+        .hero-img-container::before {
+            top: -20px;
+            right: -20px;
+            background: rgba(147, 51, 234, 0.3);
+        }
+
+        .hero-img-container::after {
+            bottom: -20px;
+            left: -20px;
+            background: rgba(59, 130, 246, 0.3);
+        }
+
+        .hero-img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 4px solid rgba(59, 130, 246, 0.2);
+            z-index: 1;
+        }
+
+        /* About Section */
+        .terminal-window {
+            background-color: var(--secondary-color);
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .terminal-header {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .terminal-button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .button-red { background-color: #ff5f56; }
+        .button-yellow { background-color: #ffbd2e; }
+        .button-green { background-color: #27c93f; }
+
+        .terminal-body {
+            padding: 24px;
+            font-family: 'Fira Code', monospace;
+            line-height: 1.6;
+        }
+
+        /* Skills Section */
+        .skill-card {
+            background-color: var(--secondary-color);
+            border: 1px solid rgba(59, 130, 246, 0.1);
+            border-radius: 10px;
+            padding: 24px;
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill-icon {
+            font-size: 2rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        /* Projects Section */
+        .project-card {
+            background-color: var(--secondary-color);
+            border: 1px solid rgba(59, 130, 246, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 24px rgba(59, 130, 246, 0.1);
+        }
+
+        .project-img {
+            height: 240px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .skills-container {
+            margin-bottom: 1.5rem;
+        }
+
+        .skills-group {
+            margin-bottom: 1rem;
+        }
+
+        .skills-group h6 {
+            color: var(--accent-color);
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-tag {
+            background-color: rgba(59, 130, 246, 0.1);
+            color: var(--accent-color);
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            transition: all 0.2s ease;
+            display: inline-block;
+            margin: 0.25rem;
+        }
+
+        .project-tag:hover {
+            background-color: rgba(59, 130, 246, 0.2);
+        }
+
+        /* Certificates Section */
+        .cert-card {
+            background-color: var(--secondary-color);
+            border: 1px solid rgba(59, 130, 246, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+
+        .cert-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 24px rgba(59, 130, 246, 0.1);
+        }
+
+        .cert-img {
+            height: 180px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background-color: var(--secondary-color);
+            border-radius: 10px;
+            padding: 2rem;
+        }
+
+        .social-icon {
+            color: var(--accent-color);
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-icon:hover {
+            color: var(--text-primary);
+            transform: translateY(-3px);
+        }
+
+        /* Buttons */
+        .btn-primary {
+            background-color: var(--accent-color);
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #2563eb;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid var(--accent-color);
+            color: var(--accent-color);
+            padding: 12px 24px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .btn-outline:hover {
+            background-color: rgba(59, 130, 246, 0.1);
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary-color);
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Fathy.AI</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h1 class="display-4 fw-bold mb-4">
+                        Hello, I'm <br>
+                        <span class="text-gradient">Fathy Hesham</span>
+                    </h1>
+                    <p class="lead">Machine Learning Engineer | Data Scientist</p>
+                    <p class="lead text-secondary mb-4">
+                        I am a passionate Machine Learning Engineer with expertise in building and deploying intelligent systems
+                        for real-world applications. My experience spans across Python, TensorFlow, PyTorch, and NLP technologies.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="FathyHesham_Resume.pdf" download class="btn btn-primary">Download Resume</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left">
+                    <div class="hero-img-container">
+                        <img src="Fathy.png" alt="Profile" class="hero-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5" id="about">
+        <div class="container">
+            <h2 class="display-6 fw-bold mb-4" data-aos="fade-up">About Me</h2>
+            <div class="terminal-window" data-aos="fade-up">
+                <div class="terminal-header">
+                    <div class="terminal-button button-red"></div>
+                    <div class="terminal-button button-yellow"></div>
+                    <div class="terminal-button button-green"></div>
+                    <span class="terminal-title">about.md</span>
+                </div>
+                <div class="terminal-body">
+                    <div class="code-line">
+                        <span class="code-prompt">$</span>
+                        <span class="code-keyword">class AboutMe {</span>
+                    </div>
+                    <div class="code-line" style="margin-left: 20px;">
+                        <span class="code-prompt">></span>
+                        Hello, Greetings! Welcome to my profile.
+                    </div>
+                    <div class="code-line" style="margin-left: 20px;">
+                        <span class="code-prompt">></span>
+                        I'm Fathy Hesham Fathy, a graduate from Ahram Canadian University with a bachelor's degree in Computer Science
+                        and Information Technology, specializing in Artificial Intelligence. I achieved a GPA of 3.76 and ranked 5th in my class.
+                    </div>
+                    <div class="code-line" style="margin-left: 20px;">
+                        <span class="code-prompt">></span>
+                        My expertise includes machine learning, deep learning, data cleaning, model design, and training using Python,
+                        TensorFlow, and Keras. I'm also skilled in data analysis techniques including Power Query, Power Pivot, and data
+                        visualization for business decision-making.
+                    </div>
+                    <div class="code-line">
+                        <span class="code-prompt">$</span>
+                        <span class="code-keyword">}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-5" id="skills">
+        <div class="container">
+            <h2 class="display-6 fw-bold mb-4" data-aos="fade-up">My Skills</h2>
+            <div class="row g-4">
+                <div class="col-md-6" data-aos="fade-up">
+                    <div class="skill-card">
+                        <i class="bi bi-braces skill-icon"></i>
+                        <h3 class="h5 mb-3">Technical Skills</h3>
+                        <div class="skills-container">
+                            <div class="skills-group">
+                                <h6>Programming & Tools</h6>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="project-tag">Python</span>
+                                    <span class="project-tag">OOP</span>
+                                    <span class="project-tag">Git</span>
+                                    <span class="project-tag">SQL</span>
+                                    <span class="project-tag">Flask</span>
+                                </div>
+                            </div>
+                            <div class="skills-group">
+                                <h6>AI & Machine Learning</h6>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="project-tag">Machine Learning</span>
+                                    <span class="project-tag">Deep Learning</span>
+                                    <span class="project-tag">NLP</span>
+                                    <span class="project-tag">Computer Vision</span>
+                                    <span class="project-tag">MLOps</span>
+                                </div>
+                            </div>
+                            <div class="skills-group">
+                                <h6>Data Science</h6>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="project-tag">Data Cleaning</span>
+                                    <span class="project-tag">Data Analysis</span>
+                                    <span class="project-tag">Data Visualization</span>
+                                    <span class="project-tag">Statistical Analysis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up">
+                    <div class="skill-card">
+                        <i class="bi bi-people skill-icon"></i>
+                        <h3 class="h5 mb-3">Professional Skills</h3>
+                        <div class="skills-container">
+                            <div class="skills-group">
+                                <h6>Communication</h6>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="project-tag">Team Collaboration</span>
+                                    <span class="project-tag">Technical Writing</span>
+                                    <span class="project-tag">Presentation</span>
+                                </div>
+                            </div>
+                            <div class="skills-group">
+                                <h6>Professional Development</h6>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="project-tag">Problem Solving</span>
+                                    <span class="project-tag">Time Management</span>
+                                    <span class="project-tag">Leadership</span>
+                                </div>
+                            </div>
+                            <div class="skills-group">
+                                <h6>Languages</h6>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="project-tag">English</span>
+                                    <span class="project-tag">Arabic</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-5" id="projects">
+        <div class="container">
+            <h2 class="display-6 fw-bold mb-4" data-aos="fade-up">Featured Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-6" data-aos="fade-up">
+                    <div class="project-card">
+                        <img src="/api/placeholder/800/600" alt="Image Captioning Project" class="project-img">
+                        <div class="p-4">
+                            <h3 class="h5 mb-3">Virtual Question Answering "Image Captioning"</h3>
+                            <p class="text-secondary mb-3">
+                                A cutting-edge project combining Computer Vision and NLP to automatically generate image captions
+                                using transformer models. Features modular design and streamlined GUI for accessibility applications.
+                            </p>
+                            <div class="skills-container">
+                                <div class="skills-group">
+                                    <h6>Core Technologies</h6>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="project-tag">Python</span>
+                                        <span class="project-tag">PyTorch</span>
+                                        <span class="project-tag">Transformers</span>
+                                    </div>
+                                </div>
+                                <div class="skills-group">
+                                    <h6>Key Features</h6>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="project-tag">Computer Vision</span>
+                                        <span class="project-tag">NLP</span>
+                                        <span class="project-tag">Hugging Face</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-outline mt-3">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up">
+                    <div class="project-card">
+                        <img src="/api/placeholder/800/600" alt="ML Project" class="project-img">
+                        <div class="p-4">
+                            <h3 class="h5 mb-3">Advanced Machine Learning Projects</h3>
+                            <p class="text-secondary mb-3">
+                                Collection of ML projects showcasing expertise in various domains including
+                                classification, regression, and clustering algorithms.
+                            </p>
+                            <div class="skills-container">
+                                <div class="skills-group">
+                                    <h6>Technologies</h6>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="project-tag">Python</span>
+                                        <span class="project-tag">TensorFlow</span>
+                                        <span class="project-tag">Scikit-learn</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-outline mt-3">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="py-5" id="certificates">
+        <div class="container">
+            <h2 class="display-6 fw-bold mb-4" data-aos="fade-up">Certificates</h2>
+            <div class="row g-4">
+                <!-- Certificate cards -->
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="cert-card">
+                        <img src="Certificates/intro-llms.jpg" alt="LLMs Certificate" class="cert-img">
+                        <div class="p-4">
+                            <h3 class="h5 mb-2">Introduction To LLMs</h3>
+                            <p class="text-secondary mb-0">365 DataScience - 2024</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="cert-card">
+                        <img src="Certificates/nlp-ai.jpg" alt="NLP Certificate" class="cert-img">
+                        <div class="p-4">
+                            <h3 class="h5 mb-2">Introduction To NLP For AI</h3>
+                            <p class="text-secondary mb-0">365 DataScience - 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="cert-card">
+                        <img src="Certificates/machine-learning.jpg" alt="ML Certificate" class="cert-img">
+                        <div class="p-4">
+                            <h3 class="h5 mb-2">Machine Learning Specialization</h3>
+                            <p class="text-secondary mb-0">Stanford University - 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5" id="contact">
+        <div class="container">
+            <h2 class="display-6 fw-bold mb-4" data-aos="fade-up">Let's Connect</h2>
+            <div class="contact-section" data-aos="fade-up">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3 class="h5 mb-4">Connect with me</h3>
+                        <div class="d-flex gap-4 mb-4">
+                            <a href="https://github.com/yourusername" class="social-icon" target="_blank">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/yourusername" class="social-icon" target="_blank">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="https://twitter.com/yourusername" class="social-icon" target="_blank">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                        </div>
+                        <p class="text-secondary">Feel free to reach out for collaborations or just a friendly hello!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="text-center">
+                <p class="text-secondary mb-0">© 2024 Fathy Hesham. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fathy Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <!-- AOS Library for Animations -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Fathy.AI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero-section">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certificates">Certificates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center" id="hero-section">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h1 class="display-4 fw-bold mb-4">
+                        Hello, I'm <br>
+                        <span class="text-gradient">Fathy Hesham</span>
+                    </h1>
+                    <p class="lead">Machine Learning Engineer | NLP Engineer</p>
+                    <p class="lead mb-4">
+                        I am a passionate Machine Learning Engineer with "over 1 year of experience" building and
+                        deploying intelligent systems for real-world applications. My experience spans across Python,
+                        TensorFlow, PyTorch, and Natural Language Processing.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <!-- Link wrapped around the button for downloading resume -->
+                        <a href="source/FathyHesham_Resume.pdf" download="FathyHesham_Resume">
+                            <button class="btn btn-primary">Download Resume</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left">
+                    <div class="hero-img-container mx-auto">
+                        <img src="source/Fathy .png" alt="Profile" class="hero-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="display-6 fw-bold mb-4" data-aos="fade-up">About me</h2>
+            <div class="terminal-window" data-aos="fade-up">
+                <div class="terminal-header">
+                    <div class="terminal-button button-red"></div>
+                    <div class="terminal-button button-yellow"></div>
+                    <div class="terminal-button button-green"></div>
+                    <span class="terminal-title">about.md</span>
+                </div>
+                <div class="terminal-body">
+                    <div class="code-line">
+                        <span class="code-prompt">$</span>
+                        <span class="code-keyword">class AboutMe {</span>
+                    </div>
+                    <div class="code-line" style="margin-left: 20px;">
+                        <span class="code-prompt">></span>
+                        Hello, Greeting !!!
+                        </span>
+                    </div>
+                    <div class="code-line" style="margin-left: 20px;">
+                        <span class="code-prompt">></span>
+                        Welcome to my profile,
+                    </div>
+                    <div class="code-line" style="margin-left: 20px;">
+                        <span class="code-prompt">></span>
+                        My Name Is Fathy Hesham Fathy, I graduated from Ahram Canadian University with a bachelor’s
+                        degree in computer science and information technology of major Artificial intelligence, where I
+                        achieved a GPA of 3.76 and ranked 5th in my class. I have valuable experience in this field. My
+                        experience in machine learning and deep learning includes data cleaning, design models and
+                        training them using python language and the most popular framework TensorFlow and Kera's. I am
+                        also familiar with various data analysis techniques of includes data cleaning using power query,
+                        data modeling using power pivot and data visualization in excel to help the business to make
+                        accurate decisions.
+                    </div>
+                    <div class="code-line">
+                        <span class="code-prompt">$</span>
+                        <span class="code-keyword">}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-5" id="skills">
+        <div class="container">
+            <h2 class="display-6 fw-bold mb-4" data-aos="fade-up">My Skills</h2>
+            <div class="row g-4">
+                <!-- Technical Skills -->
+                <div class="col-md-6" data-aos="fade-up">
+                    <div class="skill-card">
+                        <i class="bi bi-braces skill-icon"> Technical Skills</i>
+                        <h3 class="h5 mb-3"></h3>
+                        <div class="skills-container">
+                            <div class="skills-group">
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="project-tag">Python</span>
+                                    <span class="project-tag">SQL</span>
+                                    <span class="project-tag">C++</span>
+                                    <span class="project-tag">Object-Oriented Programming (OOP)</span>
+                                    <span class="project-tag">Data Cleaning</span>
+                                    <span class="project-tag">Data Visualization</span>
+                                    <span class="project-tag">Data Analysis</span>
+                                    <span class="project-tag">Machine Learning (ML) Algorithms</span>
+                                    <span class="project-tag">Supervised Learning</span>
+                                    <span class="project-tag">Unsupervised Learning</span>
+                                    <span class="project-tag">Deep Learning (DL)</span>
+                                    <span class="project-tag">Natural Language Processing (NLP)</span>
+                                    <span class="project-tag">MLOps</span>
+                                    <span class="project-tag">Transformer</span>
+                                    <span class="project-tag">Image Processing</span>
+                                    <span class="project-tag">Computer Vision</span>
+                                    <span class="project-tag">Database</span>
+                                    <span class="project-tag">SQL</span>
+                                    <span class="project-tag">Flask</span>
+                                    <span class="project-tag">LLMs</span>
+                                    <span class="project-tag">LangChain</span>
+                                    <span class="project-tag">Fine Tuning</span>
+                                    <span class="project-tag">Hugging Face</span>
+                                    <span class="project-tag">Clean Code</span>
+                                    <span class="project-tag">Problem-Solving</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="col-md-6" data-aos="fade-up">
+                    <div class="skill-card">
+                        <i class="bi bi-people skill-icon"> Soft Skills</i>
+                        <h3 class="h5 mb-3"></h3>
+                        <div class="skills-container">
+                            <div class="skills-group">
+                                <h6>Core Skills</h6>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="project-tag">Communication</span>
+                                    <span class="project-tag">Teamwork</span>
+                                    <span class="project-tag">Learning</span>
+                                    <span class="project-tag">Time management</span>
+                                    <span class="project-tag">Leadership</span>
+                                    <span class="project-tag">Research</span>
+                                    <span class="project-tag">Creativity</span>
+                                </div>
+                            </div>
+                            <div class="skills-group">
+                                <h6>Language</h6>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="project-tag">Arabic</span>
+                                    <span class="project-tag">English</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section class="py-5" id="projects">
+        <div class="container">
+            <h2 class="display-6 fw-bold mb-4" data-aos="fade-up">Projects</h2>
+            <div class="row g-4">
+                <!-- Graduation Project - Nail Diseases Detection -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card h-100">
+                        <img src="source/Picture1.jpg" alt="Nail Diseases Detection" class="project-img w-100">
+                        <div class="p-4">
+                            <div class="d-flex flex-wrap gap-2 mb-3" style="min-height: 12px;">
+                                <span class="project-tag">Image Processing</span>
+                                <span class="project-tag">CNN</span>
+                                <span class="project-tag">AI</span>
+                                <span class="project-tag">Data Preprocessing</span>
+                                <span class="project-tag">Data Cleaning</span>
+                                <span class="project-tag">Deep Learning</span>
+                                <span class="project-tag">VGG-19</span>
+                                <span class="project-tag">ResNet-50</span>
+                                <span class="project-tag">Web Development</span>
+                                <span class="project-tag">Flask</span>
+                            </div>
+                            <h3 class="h5 mb-3">Nail Diseases Detection System (Graduation Project)</h3>
+                            <p class="text-secondary mb-3" style="min-height: 15px;">Developing a model that can detect
+                                nail diseases, identify any defect in body parts, suggest a specialist doctor for a
+                                specific disease and identify some possible diseases for the patient and add to the
+                                doctor some information about the patient to help him make a good diagnosis and this
+                                project was linked to a website (website).
+                            <ul>
+                                <li>Using 12700 images</li>
+                                <li>Using CNN (Acc = 74%)</li>
+                                <li>Using VGG-19 (Acc = 82%)</li>
+                                <li>Using ResNet-50 (Acc = 89%)</li>
+                            </ul>
+                            </p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="#" class="btn btn-outline">View Project</a>
+                                <a href="source/Nail.mp4" class="btn btn-outline">Show Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DEPI Graduation Project - RAG System -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card h-100">
+                        <img src="source/RAG System.png" alt="DEPI Chatbot" class="project-img w-100">
+                        <div class="p-4">
+                            <div class="d-flex flex-wrap gap-2 mb-3" style="min-height: 12px;">
+                                <span class="project-tag">RAG</span>
+                                <span class="project-tag">NLP</span>
+                                <span class="project-tag">LangChain</span>
+                                <span class="project-tag">LLMs</span>
+                                <span class="project-tag">Fine-tuning</span>
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Chatbot</span>
+                                <span class="project-tag">API Integration</span>
+                                <span class="project-tag">Vector Database</span>
+                            </div>
+                            <h3 class="h5 mb-3">RAG System – DEPI Chatbot (DEPI Graduation Project)</h3>
+                            <p class="text-secondary mb-3" style="min-height: 210px;"> Theproject aims to build a
+                                Retrieval-Augmented Generation (RAG) system to answer questions related to
+                                the "Digital Egypt Pioneers Initiative" using Natural Language Processing techniques.
+                                Data is collected
+                                from the initiative’s website and transformed into digital representations stored in a
+                                database. When a user
+                                asks a question, the system searches for the most relevant information and uses a model
+                                to generate an
+                                appropriate response based on context. The project is deployed on Azure to ensure high
+                                performance and
+                                provide an excellent user experience.</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="https://github.com/FathyHesham/DEPI_CHATBOT_PROJECT"
+                                    class="btn btn-outline">View Project</a>
+                                <a href="#" class="btn btn-outline">Show Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Virtual Question Answering -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card h-100">
+                        <img src="source/vision-encoder-decoder.png" alt="Image Captioning" class="project-img w-100">
+                        <div class="p-4">
+                            <div class="d-flex flex-wrap gap-2 mb-3" style="min-height: 12px;">
+                                <span class="project-tag">PyTorch</span>
+                                <span class="project-tag">Transformers</span>
+                                <span class="project-tag">NLP</span>
+                                <span class="project-tag">Computer Vision</span>
+                                <span class="project-tag">AI</span>
+                                <span class="project-tag">Pre-trained Models</span>
+                                <span class="project-tag">Monitoring</span>
+                                <span class="project-tag">Clean Code</span>
+                                <span class="project-tag">OOP</span>
+                                <span class="project-tag">Streamlit</span>
+                                <span class="project-tag">Hugging Face</span>
+                            </div>
+                            <h3 class="h5 mb-3">Generate Caption of Image</h3>
+                            <p class="text-secondary mb-3" style="min-height: 144px;">Created an image captioning system
+                                using vit-gpt2-image-captioning model, combining Computer Vision and NLP. Implemented
+                                with clean code principles, OOP design, and Streamlit GUI. Utilized Hugging Face's
+                                transformers library and PyTorch for efficient processing.</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="https://github.com/FathyHesham/VIRTUAL_QUESTION_ANSWERING_PROJECT"
+                                    class="btn btn-outline">View Project</a>
+                                <a href="source/Image Captioning.mp4" class="btn btn-outline">Show Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Summarization -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card h-100">
+                        <img src="source/1_VCWfPJhnSdX7ouMuK5iKsA.jpg" alt="Text Summarization" class="project-img w-100">
+                        <div class="p-4">
+                            <div class="d-flex flex-wrap gap-2 mb-3" style="min-height: 12px;">
+                                <span class="project-tag">NLP</span>
+                                <span class="project-tag">BART-SAMSum</span>
+                                <span class="project-tag">PyTorch</span>
+                                <span class="project-tag">GPU Acceleration</span>
+                                <span class="project-tag">Streamlit</span>
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">OOP</span>
+                                <span class="project-tag">Transformers</span>
+                                <span class="project-tag">Logging</span>
+                                <span class="project-tag">Clean Code</span>
+                            </div>
+                            <h3 class="h5 mb-3">Text Summarization Using NLP</h3>
+                            <p class="text-secondary mb-3" style="min-height: 150px;">Developed a text summarization
+                                application using NLP techniques and the BART-SAMSum model to create
+                                accurate, human-like summaries of dialogues. Built with Python and OOP principles, the
+                                project utilizes
+                                Transformers, PyTorch for GPU acceleration, and Streamlit for a user-friendly interface.
+                                Designed for
+                                cross-platform compatibility with Docker, it emphasizes code maintainability and
+                                comprehensive logging.
+                                Future enhancements will focus on model fine-tuning and multi-lingual support.</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="#" class="btn btn-outline">View Project</a>
+                                <a href="#" class="btn btn-outline">Show Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Twitter Sentiment Analysis -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card h-100">
+                        <img src="source/1538479344425.jpg" alt="Twitter Sentiment Analysis" class="project-img w-100">
+                        <div class="p-4">
+                            <div class="d-flex flex-wrap gap-2 mb-3" style="min-height: 12px;">
+                                <span class="project-tag">Data Analysis</span>
+                                <span class="project-tag">Pandas</span>
+                                <span class="project-tag">NLP</span>
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Data Preprocessing</span>
+                                <span class="project-tag">Data Cleaning</span>
+                                <span class="project-tag">Data Visualization</span>
+                                <span class="project-tag">Machine Learning</span>
+                                <span class="project-tag">Deep Learning</span>
+                                <span class="project-tag">Sentiment Analysis</span>
+                            </div>
+                            <h3 class="h5 mb-3">Twitter Sentiment Analysis</h3>
+                            <p class="text-secondary mb-3" style="min-height: 15px;">Applied NLP and attention models to
+                                analyze sentiment in tweets from major companies. Utilized comprehensive data
+                                preprocessing and cleaning techniques with Pandas, implementing advanced visualization
+                                for result interpretation.</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="https://github.com/FathyHesham/Twitter_Sentiment_Analysis"
+                                    class="btn btn-outline">View Project</a>
+                                <a href="#" class="btn btn-outline">Show Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Superstore EDA -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card h-100">
+                        <img src="source/1_caGmaon-RBl1zBYloaAavQ.png" alt="Superstore Analysis" class="project-img w-100">
+                        <div class="p-4">
+                            <div class="d-flex flex-wrap gap-2 mb-3" style="min-height: 12px;">
+                                <span class="project-tag">Data Analysis</span>
+                                <span class="project-tag">Pandas</span>
+                                <span class="project-tag">EDA</span>
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Data Preprocessing</span>
+                                <span class="project-tag">Data Cleaning</span>
+                                <span class="project-tag">NumPy</span>
+                                <span class="project-tag">Data Visualization</span>
+                                <span class="project-tag">Feature Engineering</span>
+                            </div>
+                            <h3 class="h5 mb-3">Superstore Exploratory Data Analysis</h3>
+                            <p class="text-secondary mb-3" style="min-height: 15px;">Conducted comprehensive retail
+                                sales data analysis addressing 26 analytical questions. Implemented advanced data
+                                preprocessing, feature engineering, and visualization techniques using Python, Pandas,
+                                and NumPy to enhance business performance insights.</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="https://github.com/FathyHesham/Twitter_Sentiment_Analysis"
+                                    class="btn btn-outline">View Project</a>
+                                <a href="#" class="btn btn-outline">Show Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bitcoin Analysis -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card h-100">
+                        <img src="source/Bitcoin.svg.png" alt="Bitcoin Analysis" class="project-img w-100">
+                        <div class="p-4">
+                            <div class="d-flex flex-wrap gap-2 mb-3" style="min-height: 12px;">
+                                <span class="project-tag">Machine Learning</span>
+                                <span class="project-tag">Data Analysis</span>
+                                <span class="project-tag">Pandas</span>
+                                <span class="project-tag">AI</span>
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Data Preprocessing</span>
+                                <span class="project-tag">Data Cleaning</span>
+                                <span class="project-tag">Data Visualization</span>
+                                <span class="project-tag">Feature Engineering</span>
+                            </div>
+                            <h3 class="h5 mb-3">Bitcoin Historical Data Analysis</h3>
+                            <p class="text-secondary mb-3" style="min-height: 15px;">Analyzed 1,048,574 records of
+                                Bitcoin data to predict investment opportunities. Implemented multiple ML models and
+                                comprehensive data preprocessing techniques to analyze price patterns, trading volumes,
+                                and market indicators.</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="https://github.com/FathyHesham/Bitcoin-Historical-Data"
+                                    class="btn btn-outline">View Project</a>
+                                <a href="#" class="btn btn-outline">Show Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Clock Using Computer Vision -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card h-100">
+                        <img src="source/Screenshot 2023-07-02 022822.png" alt="CV Clock" class="project-img w-100">
+                        <div class="p-4">
+                            <div class="d-flex flex-wrap gap-2 mb-3" style="min-height: 12px;">
+                                <span class="project-tag">Computer Vision</span>
+                                <span class="project-tag">AI</span>
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">NumPy</span>
+                                <span class="project-tag">OpenCV</span>
+                                <span class="project-tag">Matplotlib</span>
+                                <span class="project-tag">Image Processing</span>
+                                <span class="project-tag">Data Visualization</span>
+                            </div>
+                            <h3 class="h5 mb-3">Clock Using Computer Vision</h3>
+                            <p class="text-secondary mb-3" style="min-height: 15px;">Developed a visual clock system
+                                using OpenCV, NumPy, and Matplotlib. Created a 1000x1000 display with dynamic hand
+                                movements and real-time updates, implementing advanced computer vision techniques for
+                                visual element rendering.</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="https://github.com/FathyHesham/ClockProject_Code" class="btn btn-outline">View
+                                    Project</a>
+                                <a href="source/Clock_Video.mp4" class="btn btn-outline">Show Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Updated Certificates Section -->
+    <section class="py-5" id="certificates">
+        <div class="container">
+            <h2 class="display-6 fw-bold mb-4" data-aos="fade-up">Certificates</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="cert-card">
+                        <img src="Certificates\CC-DEAFF4E5FA.jpg" alt="Certificate 1" class="cert-img w-100">
+                        <div class="p-4">
+                            <h3 class="h5 mb-2">Introduction To LLMs</h3>
+                            <p class="text-secondary mb-3">365 DataScience - 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="cert-card">
+                        <img src="Certificates\CC-C3BDB6D2FF.jpg" alt="Certificate 2" class="cert-img w-100">
+                        <div class="p-4">
+                            <h3 class="h5 mb-2"> Introduction To NLP For AI </h3>
+                            <p class="text-secondary mb-3">365 DataScience - 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="cert-card">
+                        <img src="Certificates\66-alx-aice-ai-career-essentials-certificate-fathy-hesham-fathy-elbarbary.png"
+                            alt="Certificate 3" class="cert-img w-100">
+                        <div class="p-4">
+                            <h3 class="h5 mb-2">ALX AiCE-AI Career Essentials</h3>
+                            <p class="text-secondary mb-3">alx_africa - 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="cert-card">
+                        <img src="Certificates\Supervised Machine Learning_ Regression and Classification.jpg"
+                            alt="Certificate 3" class="cert-img w-100\">
+                        <div class="p-4">
+                            <h3 class="h5 mb-2">Supervised Machine Learning (Regression and Classification)</h3>
+                            <p class="text-secondary mb-3">Stanford University ONLINE - 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="cert-card">
+                        <img src="Certificates\Certificate Database Fundamentals.jpg" alt="Certificate 3"
+                            class="cert-img w-100">
+                        <div class="p-4">
+                            <h3 class="h5 mb-2">Database Fundamentals </h3>
+                            <p class="text-secondary mb-3">Mahara Tech - 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="cert-card">
+                        <img src="Certificates\Python for Data Science and Machine Learning.jpg" alt="Certificate 3"
+                            class="cert-img w-100">
+                        <div class="p-4">
+                            <h3 class="h5 mb-2">Python for Data Science and Machine Learning </h3>
+                            <p class="text-secondary mb-3">Udemy - 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="cert-card">
+                        <img src="Certificates\The Python and Django Learning Guide.jpg" alt="Certificate 3"
+                            class="cert-img w-100">
+                        <div class="p-4">
+                            <h3 class="h5 mb-2">The Python and Django Learning Guide</h3>
+                            <p class="text-secondary mb-3">Udemy - 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="cert-card">
+                        <img src="Certificates\Introduction To Computer Vision.jpg" alt="Certificate 3"
+                            class="cert-img w-100">
+                        <div class="p-4">
+                            <h3 class="h5 mb-2">Introduction To Computer Vision</h3>
+                            <p class="text-secondary mb-3">Information Technology Institute (ITI) - 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-wrapper py-6" id="contact">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Contact Me</h2>
+
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="contact-container">
+                <!-- Contact Cards -->
+                <div class="contact-cards">
+                    <!-- GitHub Card -->
+                    <div class="contact-card">
+                        <div class="card-icon github">
+                            <i class="bi bi-github"></i>
+                        </div>
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/FathyHesham" target="_blank">FathyHesham</a>
+                    </div>
+
+                    <!-- LinkedIn Card -->
+                    <div class="contact-card">
+                        <div class="card-icon linkedin">
+                            <i class="bi bi-linkedin"></i>
+                        </div>
+                        <h3>LinkedIn</h3>
+                        <a href="https://www.linkedin.com/in/fathy-hesham-fathy/" target="_blank">Fathy Hesham</a>
+                    </div>
+
+                    <!-- Email Card -->
+                    <div class="contact-card">
+                        <div class="card-icon email">
+                            <i class="bi bi-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+
+                        <a href="mailto:fathyheshamfathy2001@gmail.com">fathyheshamfathy2001@gmail.com</a>
+                    </div>
+
+                    <!-- Phone Card -->
+                    <div class="contact-card">
+                        <div class="card-icon phone">
+                            <i class="bi bi-phone"></i>
+                        </div>
+                        <h3>Phone</h3>
+
+                        <a href="tel:+1234567890">+20 1159335151</a>
+                    </div>
+                </div>
+                <div class="contact-message text-center mt-5">
+                    <p>Feel free to reach out to me through any of the platforms above.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="text-center">
+                <p class="text-secondary mb-0">© 2025 Fathy Hesham. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>
