@@ -6,12 +6,100 @@
     --text-secondary: #94A3B8;
 }
 
-.light-theme {
+/* .light-theme {
     --primary-color: #FFFFFF;
     --secondary-color: #F8F9FA;
     --accent-color: #3B82F6;    
     --text-primary: #2D3436;
     --text-secondary: #636E72;
+} */
+
+/* Scrollable Row */
+.scrollable-row {
+    scroll-behavior: smooth;
+    /* Smooth scrolling */
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    /* Thin scrollbar */
+}
+
+/* Scrollable Row */
+.scrollable-row {
+    scroll-behavior: smooth; /* Smooth scrolling */
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: thin; /* Thin scrollbar */
+}
+
+/* Project Cards */
+.project-card {
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, and flex-basis */
+    min-width: 300px; /* Minimum width for each card */
+    height: 500px; /* Fixed height */
+    margin: 0 10px; /* Spacing between cards */
+    border: 1px solid rgba(59, 130, 246, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.1);
+}
+
+.project-img {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+.project-card .p-4 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.project-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
+
+.project-card p {
+    flex: 2;
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+    text-align: justify;
+}
+
+.project-card ul {
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+    padding-left: 1.5rem;
+}
+
+.project-card ul li {
+    margin-bottom: 0.5rem;
+}
+
+.project-card .d-flex {
+    margin-top: auto; /* Push buttons to the bottom */
+}
+
+.project-tag {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--accent-color);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
 }
 
 /* General Styles */

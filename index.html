@@ -15,13 +15,14 @@
 
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">Fathy.AI</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -130,41 +131,116 @@
     <!-- Skills Section -->
     <section class="py-5" id="skills">
         <div class="container">
-            <h2 class="display-6 fw-bold mb-4" data-aos="fade-up">My Skills</h2>
+            <h2 class="display-6 fw-bold mb-4" data-aos="fade-up">Skills</h2>
             <div class="row g-4">
                 <!-- Technical Skills -->
-                <div class="col-md-6" data-aos="fade-up">
+                <div class="col-12" data-aos="fade-up">
                     <div class="skill-card">
                         <i class="bi bi-braces skill-icon"> Technical Skills</i>
                         <h3 class="h5 mb-3"></h3>
-                        <div class="skills-container">
-                            <div class="skills-group">
-                                <div class="d-flex flex-wrap gap-2">
-                                    <span class="project-tag">Python</span>
-                                    <span class="project-tag">SQL</span>
-                                    <span class="project-tag">C++</span>
-                                    <span class="project-tag">Object-Oriented Programming (OOP)</span>
-                                    <span class="project-tag">Data Cleaning</span>
-                                    <span class="project-tag">Data Visualization</span>
-                                    <span class="project-tag">Data Analysis</span>
-                                    <span class="project-tag">Machine Learning (ML) Algorithms</span>
-                                    <span class="project-tag">Supervised Learning</span>
-                                    <span class="project-tag">Unsupervised Learning</span>
-                                    <span class="project-tag">Deep Learning (DL)</span>
-                                    <span class="project-tag">Natural Language Processing (NLP)</span>
-                                    <span class="project-tag">MLOps</span>
-                                    <span class="project-tag">Transformer</span>
-                                    <span class="project-tag">Image Processing</span>
-                                    <span class="project-tag">Computer Vision</span>
-                                    <span class="project-tag">Database</span>
-                                    <span class="project-tag">SQL</span>
-                                    <span class="project-tag">Flask</span>
-                                    <span class="project-tag">LLMs</span>
-                                    <span class="project-tag">LangChain</span>
-                                    <span class="project-tag">Fine Tuning</span>
-                                    <span class="project-tag">Hugging Face</span>
-                                    <span class="project-tag">Clean Code</span>
-                                    <span class="project-tag">Problem-Solving</span>
+                        <div class="row">
+                            <!-- Column 1 -->
+                            <div class="col-md-6">
+                                <div class="skills-container">
+                                    <!-- Programming Languages -->
+                                    <div class="skills-group">
+                                        <h6>Programming Languages</h6>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="project-tag">Python</span>
+                                            <span class="project-tag">C++</span>
+                                            <span class="project-tag">SQL</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Libraries/Frameworks -->
+                                    <div class="skills-group">
+                                        <h6>Libraries/Frameworks</h6>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="project-tag">Pandas</span>
+                                            <span class="project-tag">NumPy</span>
+                                            <span class="project-tag">scikit-learn</span>
+                                            <span class="project-tag">NLTK</span>
+                                            <span class="project-tag">Spacy</span>
+                                            <span class="project-tag">TensorFlow</span>
+                                            <span class="project-tag">Keras</span>
+                                            <span class="project-tag">LangChain</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Data Analysis & Visualization -->
+                                    <div class="skills-group">
+                                        <h6>Data Analysis & Visualization</h6>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="project-tag">Matplotlib</span>
+                                            <span class="project-tag">Seaborn</span>
+                                            <span class="project-tag">Excel</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Web Scraping -->
+                                    <div class="skills-group">
+                                        <h6>Web Scraping</h6>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="project-tag">BeautifulSoup</span>
+                                            <span class="project-tag">Selenium</span>
+                                        </div>
+                                        <!-- APIs & Tools -->
+                                        <div class="skills-group">
+                                            <h6>Tools</h6>
+                                            <div class="d-flex flex-wrap gap-2">
+                                                <span class="project-tag">Git</span>
+                                                <span class="project-tag">GitHub</span>
+                                                <span class="project-tag">Hugging Face</span>
+                                                <span class="project-tag">Ollama</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Column 2 -->
+                            <div class="col-md-6">
+                                <div class="skills-container">
+                                    <!-- Data Science -->
+                                    <div class="skills-group">
+                                        <h6>Data Science</h6>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="project-tag">Machine Learning</span>
+                                            <span class="project-tag">Deep Learning</span>
+                                            <span class="project-tag">Data Analysis</span>
+                                            <span class="project-tag">Neural Networks</span>
+                                            <span class="project-tag">Natural Language Processing (NLP)</span>
+                                            <span class="project-tag">Fine Tuning</span>
+                                            <span class="project-tag">Transformer</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- MLOps & Deployment -->
+                                    <div class="skills-group">
+                                        <h6>MLOps & Deployment</h6>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="project-tag">MLOps</span>
+                                            <span class="project-tag">Flask</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Image Processing & Computer Vision -->
+                                    <div class="skills-group">
+                                        <h6>Image Processing & Computer Vision</h6>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="project-tag">Image Processing</span>
+                                            <span class="project-tag">Computer Vision</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Other Technical Skills -->
+                                    <div class="skills-group">
+                                        <h6>Other Technical Skills</h6>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="project-tag">Clean Code</span>
+                                            <span class="project-tag">Problem-Solving</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -172,25 +248,28 @@
                 </div>
 
                 <!-- Soft Skills -->
-                <div class="col-md-6" data-aos="fade-up">
+                <div class="col-12" data-aos="fade-up">
                     <div class="skill-card">
                         <i class="bi bi-people skill-icon"> Soft Skills</i>
                         <h3 class="h5 mb-3"></h3>
                         <div class="skills-container">
+                            <!-- Core Soft Skills -->
                             <div class="skills-group">
-                                <h6>Core Skills</h6>
+                                <h6>Core Soft Skills</h6>
                                 <div class="d-flex flex-wrap gap-2">
                                     <span class="project-tag">Communication</span>
                                     <span class="project-tag">Teamwork</span>
                                     <span class="project-tag">Learning</span>
-                                    <span class="project-tag">Time management</span>
+                                    <span class="project-tag">Time Management</span>
                                     <span class="project-tag">Leadership</span>
                                     <span class="project-tag">Research</span>
                                     <span class="project-tag">Creativity</span>
                                 </div>
                             </div>
+
+                            <!-- Languages -->
                             <div class="skills-group">
-                                <h6>Language</h6>
+                                <h6>Languages</h6>
                                 <div class="d-flex flex-wrap gap-2">
                                     <span class="project-tag">Arabic</span>
                                     <span class="project-tag">English</span>
@@ -199,23 +278,31 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-
     <!-- Projects Section -->
     <section class="py-5" id="projects">
-        <div class="container">
+        <div class="container position-relative">
             <h2 class="display-6 fw-bold mb-4" data-aos="fade-up">Projects</h2>
-            <div class="row g-4">
-                <!-- Graduation Project - Nail Diseases Detection -->
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+
+            <!-- Scroll Buttons -->
+            <button id="scrollLeft" class="btn btn-scroll scroll-left">
+                <i class="bi bi-chevron-left"></i>
+            </button>
+            <button id="scrollRight" class="btn btn-scroll scroll-right">
+                <i class="bi bi-chevron-right"></i>
+            </button>
+
+            <!-- Scrollable Row -->
+            <div class="row flex-nowrap overflow-x-auto scrollable-row g-4" style="scrollbar-width: thin;">
+                <!-- Project 1 -->
+                <div class="col-md-4 flex-grow-1">
                     <div class="project-card h-100">
                         <img src="source/Picture1.jpg" alt="Nail Diseases Detection" class="project-img w-100">
-                        <div class="p-4">
-                            <div class="d-flex flex-wrap gap-2 mb-3" style="min-height: 12px;">
+                        <div class="p-4 d-flex flex-column h-100">
+                            <div class="d-flex flex-wrap gap-2 mb-3">
                                 <span class="project-tag">Image Processing</span>
                                 <span class="project-tag">CNN</span>
                                 <span class="project-tag">AI</span>
@@ -228,32 +315,26 @@
                                 <span class="project-tag">Flask</span>
                             </div>
                             <h3 class="h5 mb-3">Nail Diseases Detection System (Graduation Project)</h3>
-                            <p class="text-secondary mb-3" style="min-height: 15px;">Developing a model that can detect
-                                nail diseases, identify any defect in body parts, suggest a specialist doctor for a
-                                specific disease and identify some possible diseases for the patient and add to the
-                                doctor some information about the patient to help him make a good diagnosis and this
-                                project was linked to a website (website).
-                            <ul>
-                                <li>Using 12700 images</li>
-                                <li>Using CNN (Acc = 74%)</li>
-                                <li>Using VGG-19 (Acc = 82%)</li>
-                                <li>Using ResNet-50 (Acc = 89%)</li>
-                            </ul>
+                            <p class="text-secondary mb-3 flex-grow-1">
+                                Developing a model that can detect nail diseases, identify any defect in body parts,
+                                suggest a specialist doctor for a specific disease and identify some possible diseases
+                                for the patient and add to the doctor some information about the patient to help him
+                                make a good diagnosis and this project was linked to a website (website). Using 12700 images. Using CNN (Acc = 74%).Using VGG-19 (Acc = 82%). Using ResNet-50 (Acc = 89%)
                             </p>
-                            <div class="d-flex justify-content-center gap-2">
-                                <a href="#" class="btn btn-outline">View Project</a>
-                                <a href="source/Nail.mp4" class="btn btn-outline">Show Video</a>
+                            <div class="d-flex justify-content-center gap-2 mt-auto">
+                                <a href="https://github.com/FathyHesham/Nail-Diseases-Detection-System-Graduation-Project-"
+                                    class="btn btn-outline">View Project</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- DEPI Graduation Project - RAG System -->
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <!-- Project 2 -->
+                <div class="col-md-4 flex-grow-1">
                     <div class="project-card h-100">
                         <img src="source/RAG System.png" alt="DEPI Chatbot" class="project-img w-100">
-                        <div class="p-4">
-                            <div class="d-flex flex-wrap gap-2 mb-3" style="min-height: 12px;">
+                        <div class="p-4 d-flex flex-column h-100">
+                            <div class="d-flex flex-wrap gap-2 mb-3">
                                 <span class="project-tag">RAG</span>
                                 <span class="project-tag">NLP</span>
                                 <span class="project-tag">LangChain</span>
@@ -265,32 +346,29 @@
                                 <span class="project-tag">Vector Database</span>
                             </div>
                             <h3 class="h5 mb-3">RAG System – DEPI Chatbot (DEPI Graduation Project)</h3>
-                            <p class="text-secondary mb-3" style="min-height: 210px;"> Theproject aims to build a
-                                Retrieval-Augmented Generation (RAG) system to answer questions related to
-                                the "Digital Egypt Pioneers Initiative" using Natural Language Processing techniques.
-                                Data is collected
-                                from the initiative’s website and transformed into digital representations stored in a
-                                database. When a user
-                                asks a question, the system searches for the most relevant information and uses a model
-                                to generate an
+                            <p class="text-secondary mb-3 flex-grow-1">
+                                The project aims to build a Retrieval-Augmented Generation (RAG) system to answer
+                                questions related to the "Digital Egypt Pioneers Initiative" using Natural Language
+                                Processing techniques. Data is collected from the initiative’s website and transformed
+                                into digital representations stored in a database. When a user asks a question, the
+                                system searches for the most relevant information and uses a model to generate an
                                 appropriate response based on context. The project is deployed on Azure to ensure high
-                                performance and
-                                provide an excellent user experience.</p>
-                            <div class="d-flex justify-content-center gap-2">
+                                performance and provide an excellent user experience.
+                            </p>
+                            <div class="d-flex justify-content-center gap-2 mt-auto">
                                 <a href="https://github.com/FathyHesham/DEPI_CHATBOT_PROJECT"
                                     class="btn btn-outline">View Project</a>
-                                <a href="#" class="btn btn-outline">Show Video</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Virtual Question Answering -->
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <!-- Project 3 -->
+                <div class="col-md-4 flex-grow-1">
                     <div class="project-card h-100">
                         <img src="source/vision-encoder-decoder.png" alt="Image Captioning" class="project-img w-100">
-                        <div class="p-4">
-                            <div class="d-flex flex-wrap gap-2 mb-3" style="min-height: 12px;">
+                        <div class="p-4 d-flex flex-column h-100">
+                            <div class="d-flex flex-wrap gap-2 mb-3">
                                 <span class="project-tag">PyTorch</span>
                                 <span class="project-tag">Transformers</span>
                                 <span class="project-tag">NLP</span>
@@ -304,25 +382,27 @@
                                 <span class="project-tag">Hugging Face</span>
                             </div>
                             <h3 class="h5 mb-3">Generate Caption of Image</h3>
-                            <p class="text-secondary mb-3" style="min-height: 144px;">Created an image captioning system
-                                using vit-gpt2-image-captioning model, combining Computer Vision and NLP. Implemented
-                                with clean code principles, OOP design, and Streamlit GUI. Utilized Hugging Face's
-                                transformers library and PyTorch for efficient processing.</p>
-                            <div class="d-flex justify-content-center gap-2">
+                            <p class="text-secondary mb-3 flex-grow-1">
+                                Created an image captioning system using vit-gpt2-image-captioning model, combining
+                                Computer Vision and NLP. Implemented with clean code principles, OOP design, and
+                                Streamlit GUI. Utilized Hugging Face's transformers library and PyTorch for efficient
+                                processing.
+                            </p>
+                            <div class="d-flex justify-content-center gap-2 mt-auto">
                                 <a href="https://github.com/FathyHesham/VIRTUAL_QUESTION_ANSWERING_PROJECT"
                                     class="btn btn-outline">View Project</a>
-                                <a href="source/Image Captioning.mp4" class="btn btn-outline">Show Video</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Text Summarization -->
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <!-- Project 4 -->
+                <div class="col-md-4 flex-grow-1">
                     <div class="project-card h-100">
-                        <img src="source/1_VCWfPJhnSdX7ouMuK5iKsA.jpg" alt="Text Summarization" class="project-img w-100">
-                        <div class="p-4">
-                            <div class="d-flex flex-wrap gap-2 mb-3" style="min-height: 12px;">
+                        <img src="source/1_VCWfPJhnSdX7ouMuK5iKsA.jpg" alt="Text Summarization"
+                            class="project-img w-100">
+                        <div class="p-4 d-flex flex-column h-100">
+                            <div class="d-flex flex-wrap gap-2 mb-3">
                                 <span class="project-tag">NLP</span>
                                 <span class="project-tag">BART-SAMSum</span>
                                 <span class="project-tag">PyTorch</span>
@@ -335,29 +415,28 @@
                                 <span class="project-tag">Clean Code</span>
                             </div>
                             <h3 class="h5 mb-3">Text Summarization Using NLP</h3>
-                            <p class="text-secondary mb-3" style="min-height: 150px;">Developed a text summarization
-                                application using NLP techniques and the BART-SAMSum model to create
-                                accurate, human-like summaries of dialogues. Built with Python and OOP principles, the
-                                project utilizes
-                                Transformers, PyTorch for GPU acceleration, and Streamlit for a user-friendly interface.
-                                Designed for
-                                cross-platform compatibility with Docker, it emphasizes code maintainability and
-                                comprehensive logging.
-                                Future enhancements will focus on model fine-tuning and multi-lingual support.</p>
-                            <div class="d-flex justify-content-center gap-2">
-                                <a href="#" class="btn btn-outline">View Project</a>
-                                <a href="#" class="btn btn-outline">Show Video</a>
+                            <p class="text-secondary mb-3 flex-grow-1">
+                                Developed a text summarization application using NLP techniques and the BART-SAMSum
+                                model to create accurate, human-like summaries of dialogues. Built with Python and OOP
+                                principles, the project utilizes Transformers, PyTorch for GPU acceleration, and
+                                Streamlit for a user-friendly interface. Designed for cross-platform compatibility with
+                                Docker, it emphasizes code maintainability and comprehensive logging. Future
+                                enhancements will focus on model fine-tuning and multi-lingual support.
+                            </p>
+                            <div class="d-flex justify-content-center gap-2 mt-auto">
+                                <a href="https://github.com/FathyHesham/Text-Summarization-Project"
+                                    class="btn btn-outline">View Project</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Twitter Sentiment Analysis -->
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <!-- Project 5 -->
+                <div class="col-md-4 flex-grow-1">
                     <div class="project-card h-100">
                         <img src="source/1538479344425.jpg" alt="Twitter Sentiment Analysis" class="project-img w-100">
-                        <div class="p-4">
-                            <div class="d-flex flex-wrap gap-2 mb-3" style="min-height: 12px;">
+                        <div class="p-4 d-flex flex-column h-100">
+                            <div class="d-flex flex-wrap gap-2 mb-3">
                                 <span class="project-tag">Data Analysis</span>
                                 <span class="project-tag">Pandas</span>
                                 <span class="project-tag">NLP</span>
@@ -370,25 +449,26 @@
                                 <span class="project-tag">Sentiment Analysis</span>
                             </div>
                             <h3 class="h5 mb-3">Twitter Sentiment Analysis</h3>
-                            <p class="text-secondary mb-3" style="min-height: 15px;">Applied NLP and attention models to
-                                analyze sentiment in tweets from major companies. Utilized comprehensive data
-                                preprocessing and cleaning techniques with Pandas, implementing advanced visualization
-                                for result interpretation.</p>
-                            <div class="d-flex justify-content-center gap-2">
+                            <p class="text-secondary mb-3 flex-grow-1">
+                                Applied NLP and attention models to analyze sentiment in tweets from major companies.
+                                Utilized comprehensive data preprocessing and cleaning techniques with Pandas,
+                                implementing advanced visualization for result interpretation.
+                            </p>
+                            <div class="d-flex justify-content-center gap-2 mt-auto">
                                 <a href="https://github.com/FathyHesham/Twitter_Sentiment_Analysis"
                                     class="btn btn-outline">View Project</a>
-                                <a href="#" class="btn btn-outline">Show Video</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Superstore EDA -->
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <!-- Project 6 -->
+                <div class="col-md-4 flex-grow-1">
                     <div class="project-card h-100">
-                        <img src="source/1_caGmaon-RBl1zBYloaAavQ.png" alt="Superstore Analysis" class="project-img w-100">
-                        <div class="p-4">
-                            <div class="d-flex flex-wrap gap-2 mb-3" style="min-height: 12px;">
+                        <img src="source/1_caGmaon-RBl1zBYloaAavQ.png" alt="Superstore Analysis"
+                            class="project-img w-100">
+                        <div class="p-4 d-flex flex-column h-100">
+                            <div class="d-flex flex-wrap gap-2 mb-3">
                                 <span class="project-tag">Data Analysis</span>
                                 <span class="project-tag">Pandas</span>
                                 <span class="project-tag">EDA</span>
@@ -400,25 +480,25 @@
                                 <span class="project-tag">Feature Engineering</span>
                             </div>
                             <h3 class="h5 mb-3">Superstore Exploratory Data Analysis</h3>
-                            <p class="text-secondary mb-3" style="min-height: 15px;">Conducted comprehensive retail
-                                sales data analysis addressing 26 analytical questions. Implemented advanced data
-                                preprocessing, feature engineering, and visualization techniques using Python, Pandas,
-                                and NumPy to enhance business performance insights.</p>
-                            <div class="d-flex justify-content-center gap-2">
+                            <p class="text-secondary mb-3 flex-grow-1">
+                                Conducted comprehensive retail sales data analysis addressing 26 analytical questions.
+                                Implemented advanced data preprocessing, feature engineering, and visualization
+                                techniques using Python, Pandas, and NumPy to enhance business performance insights.
+                            </p>
+                            <div class="d-flex justify-content-center gap-2 mt-auto">
                                 <a href="https://github.com/FathyHesham/Twitter_Sentiment_Analysis"
                                     class="btn btn-outline">View Project</a>
-                                <a href="#" class="btn btn-outline">Show Video</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Bitcoin Analysis -->
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <!-- Project 7 -->
+                <div class="col-md-4 flex-grow-1">
                     <div class="project-card h-100">
                         <img src="source/Bitcoin.svg.png" alt="Bitcoin Analysis" class="project-img w-100">
-                        <div class="p-4">
-                            <div class="d-flex flex-wrap gap-2 mb-3" style="min-height: 12px;">
+                        <div class="p-4 d-flex flex-column h-100">
+                            <div class="d-flex flex-wrap gap-2 mb-3">
                                 <span class="project-tag">Machine Learning</span>
                                 <span class="project-tag">Data Analysis</span>
                                 <span class="project-tag">Pandas</span>
@@ -430,25 +510,25 @@
                                 <span class="project-tag">Feature Engineering</span>
                             </div>
                             <h3 class="h5 mb-3">Bitcoin Historical Data Analysis</h3>
-                            <p class="text-secondary mb-3" style="min-height: 15px;">Analyzed 1,048,574 records of
-                                Bitcoin data to predict investment opportunities. Implemented multiple ML models and
-                                comprehensive data preprocessing techniques to analyze price patterns, trading volumes,
-                                and market indicators.</p>
-                            <div class="d-flex justify-content-center gap-2">
+                            <p class="text-secondary mb-3 flex-grow-1">
+                                Analyzed 1,048,574 records of Bitcoin data to predict investment opportunities.
+                                Implemented multiple ML models and comprehensive data preprocessing techniques to
+                                analyze price patterns, trading volumes, and market indicators.
+                            </p>
+                            <div class="d-flex justify-content-center gap-2 mt-auto">
                                 <a href="https://github.com/FathyHesham/Bitcoin-Historical-Data"
                                     class="btn btn-outline">View Project</a>
-                                <a href="#" class="btn btn-outline">Show Video</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Clock Using Computer Vision -->
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <!-- Project 8 -->
+                <div class="col-md-4 flex-grow-1">
                     <div class="project-card h-100">
                         <img src="source/Screenshot 2023-07-02 022822.png" alt="CV Clock" class="project-img w-100">
-                        <div class="p-4">
-                            <div class="d-flex flex-wrap gap-2 mb-3" style="min-height: 12px;">
+                        <div class="p-4 d-flex flex-column h-100">
+                            <div class="d-flex flex-wrap gap-2 mb-3">
                                 <span class="project-tag">Computer Vision</span>
                                 <span class="project-tag">AI</span>
                                 <span class="project-tag">Python</span>
@@ -459,14 +539,14 @@
                                 <span class="project-tag">Data Visualization</span>
                             </div>
                             <h3 class="h5 mb-3">Clock Using Computer Vision</h3>
-                            <p class="text-secondary mb-3" style="min-height: 15px;">Developed a visual clock system
-                                using OpenCV, NumPy, and Matplotlib. Created a 1000x1000 display with dynamic hand
-                                movements and real-time updates, implementing advanced computer vision techniques for
-                                visual element rendering.</p>
-                            <div class="d-flex justify-content-center gap-2">
+                            <p class="text-secondary mb-3 flex-grow-1">
+                                Developed a visual clock system using OpenCV, NumPy, and Matplotlib. Created a 1000x1000
+                                display with dynamic hand movements and real-time updates, implementing advanced
+                                computer vision techniques for visual element rendering.
+                            </p>
+                            <div class="d-flex justify-content-center gap-2 mt-auto">
                                 <a href="https://github.com/FathyHesham/ClockProject_Code" class="btn btn-outline">View
                                     Project</a>
-                                <a href="source/Clock_Video.mp4" class="btn btn-outline">Show Video</a>
                             </div>
                         </div>
                     </div>
@@ -639,5 +719,28 @@
             once: true
         });
     </script>
+    <!-- Your Custom JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const scrollableRow = document.querySelector('.scrollable-row');
+            const scrollLeftButton = document.getElementById('scrollLeft');
+            const scrollRightButton = document.getElementById('scrollRight');
+
+            scrollLeftButton.addEventListener('click', () => {
+                scrollableRow.scrollBy({
+                    left: -300, // Scroll left by 300px
+                    behavior: 'smooth'
+                });
+            });
+
+            scrollRightButton.addEventListener('click', () => {
+                scrollableRow.scrollBy({
+                    left: 300, // Scroll right by 300px
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
+
 </html>
